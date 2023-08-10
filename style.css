@@ -1,8 +1,8 @@
 @import url("style/header.css");
 
 :root{
-    --cor-de--fundo: #9dbedd;
-    --dor-do-menu:rgba(252,255,250,0.797);
+    --cor-de--fundo: #ffffff;
+    --dor-do-menu: #B7D4A8;
 }
 body{
     background-color: var(--cor-de--fundo);
