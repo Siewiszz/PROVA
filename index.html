@@ -3,29 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Entrelinhas</title>
 </head>
 <body>
     <header class="cabeçalho">
-    <div class="container">
-        <input type="checkbox" id="menu" class="container__botao">
-        <label for="menu">
-            <span class="cabeçalho__menu-quadriculas container__imagem"></span>
-        </label>
-    <ul class="lista-menu">
-        <li type="circle" class="lista-menu__titulo">Categorias</li>
-        <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link">Quadros</a></li>
-        <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link">Musica</a></li>
-        <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link">Livros</a></li>
-    </ul>
-    <img src="Entrelinhas.svg" alt="Logo do site" class="container__imagem">
-    </div>
-    <div class="container">
-        <a href="#"><img src="coracao.svg" alt="meus favoritos" class="container__imagem"></a>
-        <a href="#"><img src="carrinho-de-compras.svg" alt="minhas compras" class="container__imagem"></a>
-        <a href="#"><img src="perfil.svg" alt="meu perfil" class="container__imagem"></a>
-    </div>
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-quadriculas container__imagem"></span>
+            </label>
+        <ul class="lista-menu">
+            <li type="circle" class="lista-menu__titulo">Categorias</li>
+            <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-1">Chaveiros</a></li>
+            <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-2">Princesas Disney</a></li>
+            <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-3">Alice no País das Maravilhas</a></li>
+        </ul>
+        <img src="imagens/Entrelinhas.svg" alt="Logo do Site" class="container__imagem">
+        </div>
+        <div class="container">
+        <a href="#"><img src="imagens/favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+        <a href="#"><img src="imagens/sacola.svg" alt="Minhas compras" class="container__imagem"></a>
+        <a href="#"><img src="imagens/perfil.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
     </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Não achou o que estava procurando?</h2>
+        <input type="search" class="banner__pesquisa" placeholder="Pesquisar">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Produtos</h2>
+        <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imagens/png/Chapeleiro-Maluco.png" alt="Chapeleiro Maluco"></div>
+            <div class="swiper-slide"><img src="imagens/png/Chaveiro-Baleia.png" alt="Chaveiro Baleia"></div>
+            <div class="swiper-slide"><img src="imagens/png/Chaveiro-Nossa-Senhora-de-Fátima.png" alt="Chaveiro Nossa Senhora de Fátima"></div>
+            <div class="swiper-slide"><img src="imagens/png/Coelho-Maluco.png" alt="Coelho Maluco"></div>
+            <div class="swiper-slide"><img src="imagens/png/Rainha-de-Copas.png" alt="Rainha de Copas"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+    <div class="card">
+        <div class="card_descrição">
+            <div class="descrição">
+                <h3 class="descrição__titulo">Trabalho feito com amor é um trabalho bem feito!</h3>
+                <h2 class="descrição__titulo-livro">Rainha de Copas</h2>
+                <p class="descrição__texto">Amigurumi Rainha de Copas da coleção "Alice no País das Maravilhas". Feito com linha Amigurumi Círculo.</p>
+                <p class="descrição__texto">R$xx,xx</p>
+            </div>
+            <img src="imagens/png/Rainha-de-Copas.png" class="descrição__imagem" alt="Amigurumi Rainha de Copas - Coleção Alice no País das Maravilhas">
+        </div>
+        <div class="card__botões">
+            <ul class="botões">
+                <u1 class="botões__itens"><img src="imagens/favoritos.svg" alt="Favoritos"></u1>
+                <u1 class="botões__itens"><img src="imagens/sacola.svg" alt="Minha Sacola"></u1>
+            </ul>
+            <a href="#" class="botões__ancora">Ver mais</a>
+        </div>
+    </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos__titulos">Contato</h2>
+        <ul class="topicos__listas">
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">Instagram</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">Facebook</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">WhatsApp</a>
+            </ul>
+        </ul>
+    </section>
+    <section class="contato">
+        <h2 class="contato__titulo">Mais novidades a caminho</h2>
+        <p class="contato__texto">Cadastre seu e-mail para receber as novidades!</p>
+        <input type="email" placeholder="Digite seu e-mail" class="contato__email">
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(`.swiper`,{
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el:`.swiper-pagination`,
+            type:`bullets`,
+        },
+        });
+    </script>
 </body>
 </html>
