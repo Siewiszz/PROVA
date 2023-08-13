@@ -1,9 +1,27 @@
-@import url("style/header.css");
+@import url("header.css");
+@import url("banner.css");
+@import url("carrossel.css");
+@import url("topicos.css");
+@import url("contato.css");
 
 :root{
-    --cor-de--fundo: #ffffff;
-    --dor-do-menu: #B7D4A8;
+    --cor-de--fundo: #d1e7c6; 
+    --cor-do-menu: #c7e0bb;
+    --titulo: #2e8b57; 
+    --cor-do-menu-fundo: #f5fffa;
+    --cor-do-menu-categorias: #b7d4a8;
+    --link-1: #2e8b57;
+    --link-2: #2e8b57;
+    --link-3: #2e8b57;
+    --cor-fonte-menu: #FFFFFF;
+    --fonte-principal: "jost";
 }
 body{
     background-color: var(--cor-de--fundo);
+    font-family: ´Playfair Display´, "jost";
+    font-size: 16px;
+    font-weight: 400;
+}
+li{
+    list-style-type: none;
 }
